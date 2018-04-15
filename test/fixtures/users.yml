@@ -1,11 +1,16 @@
+---
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  email: MyString
-  facebook_id: MyString
+  name: User One
+  email: one@example.com
+  token: <%= SecureRandom.hex %>
+  facebook_id: 1234567890
+  facebook_access_token: <%= SecureRandom.hex %>
 
 two:
-  name: MyString
-  email: MyString
-  facebook_id: MyString
+  name: User Two
+  email: two@example.com
+  token: <%= SecureRandom.hex %>
+  facebook_id: 9876543210
+  facebook_access_token: <%= SecureRandom.hex %>

@@ -1,10 +1,7 @@
+# Configure the Facebook API client for use with the 'Going' application
 Koala.configure do |config|
   facebook = Rails.application.credentials.facebook
 
-  if facebook.present?
-    config.access_token = facebook[:access_token]
-    config.app_access_token = facebook[:app_access_token]
-    config.app_id = facebook[:app_id]
-    config.app_secret = facebook[:app_secret]
-  end
+  config.app_id = facebook[:app_id]
+  config.app_secret = facebook[:app_secret]
 end

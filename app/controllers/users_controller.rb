@@ -1,11 +1,14 @@
 class UsersController < ApplicationController
   def new
-    redirect_to calendar_path and return if current_user.present?
+    if current_user.present?
+      redirect_to calendar_path
+      return
+    end
   end
 
   def create
-    self.current_user = User.from_omniauth(**auth_hash)
-    redirect_to root_path
+    self.current_user = User.from_omniauth(auth_hash)
+    redirect_to calendar_path
   end
 
   private

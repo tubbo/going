@@ -1,0 +1,17 @@
+---
+TooManyStatements:
+  exclude:
+    - Calendar#self.create_event_from
+
+IrresponsibleModule:
+  enabled: false
+
+InstanceVariableAssumption:
+  exclude:
+    - CalendarsController
+    - UsersController
+    - ApplicationController
+
+NilCheck:
+  exclude:
+    - ApplicationController#current_user=

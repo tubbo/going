@@ -27,12 +27,23 @@ gem 'koala'
 gem 'omniauth-facebook'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+# iCalendar file format generation
+gem 'icalendar'
 
 group :development, :test do
   # Call 'binding.pry' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug', platforms: %i[mri mingw x64_mingw]
   # Replace the default `rails console` with Pry
   gem 'pry-rails', platforms: %i[mri mingw x64_mingw]
+end
+
+group :test do
+  # Use Mocha for local mocking & stubbing
+  gem 'mocha'
+  # Use VCR to mock API responses
+  gem 'vcr'
+  # Use WebMock as a driver for VCR
+  gem 'webmock'
 end
 
 group :development do

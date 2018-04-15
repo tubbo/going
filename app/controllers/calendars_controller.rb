@@ -1,26 +1,25 @@
+# API for showing the user's calendar with iCal
 class CalendarsController < ApplicationController
-  before_action :http_basic_authenticate, if: :ical?
-  before_action :authenticate!
+  before_action :auth_user_by_token, if: :ical?
+  before_action :require_user
 
   def show
-    @calendar = Calendar.find(current_user)
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.ical { render ical: @calendar.to_ical }
-    end
+    @calendar = current_user.calendar
   end
 
   private
 
-  def http_basic_authenticate
-    authenticate_or_request_with_http_basic do |token, options|
-      self.current_user = User.find_by(api_key: token)
+  def auth_user_by_token
+    authenticate_or_request_with_http_token(t(:name)) do |token, options|
+      self.current_user = User.find_by(token: token)
     end
   end
 
-  def authenticate!
-    redirect_to new_user_path and return if current_user.blank?
+  def require_user
+    if current_user.blank?
+      redirect_to root_path
+      return
+    end
   end
 
   def ical?

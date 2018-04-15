@@ -1,0 +1,420 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/me/events?access_token=EAACuX4ZA8sRkBAIYB405JpljA4P5gY1oxmLl86CFZAOy2ZBz6zRxagKgLbwIYF0vo7IWZCtAPtMTPCt9ZC287kdhUzgXPc9xvL3GPIxQlfxPth0YxGNQL7Ggs7FfgmlhwYnXw3z1ykc3ZBfwmWZBZBqVhJlR3AZAEcQYlqnJ8oJr1kq4nWYSnJy5ZCzHiLZCUXxse1o5HAcvH4RpwZDZD&appsecret_proof=a4049aa0b8e0baeb3d43daf778e8fb0d53c946b9383767413b0604634f4e0f58&fields=name,description,start_time,end_time,place%7Bname,location%7Bcity,country,state,street,zip%7D%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Etag:
+      - '"d48c0eedb1e3d54af203a6744c1fe41c946e0c5e"'
+      Strict-Transport-Security:
+      - max-age=15552000; preload
+      X-Fb-Trace-Id:
+      - GfosteTMtGv
+      X-Fb-Rev:
+      - '3815257'
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Facebook-Api-Version:
+      - v2.12
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      X-Fb-Debug:
+      - F5gKfKqgeLhA8NaPq8MjcvuWpBPHEnA78kW8Jkw33XlBN0Cz4nay978Bl0hepb8J3eNndtYK/VFJdZa9MaOIyg==
+      Date:
+      - Sun, 15 Apr 2018 21:52:31 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '13403'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"name":"Burning Mars 2026","description":"Welcome to the
+        expedition to Mars - with no way back.\n\nThe project consists of taking the
+        worlds finest desert explorers to a new home: Mars. \n\n                           Mars
+        principles:\n\n- Radical commitment to the colour of orange\n- Radical inclusion
+        (there''s nobody else)\n- Radical self-reliance (bring enough water)\n- Civic
+        responsibility: don''t pee on the orange playa \n\n                        Welcome
+        home !!!","start_time":"2026-01-01T00:00:00+0100","place":{"name":"Mars"},"id":"1666044920283588"},{"name":"Jamiroquai","description":"Madison
+        House Presents\n\nJAMIROQUAI\n\nSAT, 8 SEP 2018 at 07:30PM EDT\nDoors Open:
+        06:00PM\n\nOnSale: Fri, 23 Mar 2018 at 10:00AM EDT\nAnnouncement: Mon, 19
+        Mar 2018 at 10:00AM EDT\n\nFounded in 1992 by front man Jay Kay, the pioneers
+        of \u201cfuture funk\u201d have taken the world by storm, establishing themselves
+        as one of the most successful acts on the planet. Since the release of their
+        debut album \u2018Emergency on Planet Earth\u2019 in 1993, Jamiroquai have
+        completed reinvigorated modern pop music while also paving the way as chief
+        influencers of some of today\u2019s most exciting artists. With famous fans
+        including the likes of Chance the Rapper, Pharrell, Tyler the Creator, Jungle,
+        Redman & The Internet as well as historic performances alongside Stevie Wonder
+        & Diana Ross, Jamiroquai have consistently proved themselves as one of the
+        globe\u2019s most revered and unifying musical innovators of our time. \r\nWith
+        over seven albums reaching the UK Top 10 (and three reaching #1), the Grammy
+        Award winning, Brits-nominated band have sold over 26m albums worldwide and
+        hold the Guinness Book of World Records record for best-selling funk album
+        of all time.\r\n \n\nPRESALE INFORMATION\r\n\r\nWest Side Tennis Club Presale:
+        Monday, March 19 at 10 AM Eastern\r\nAmEx Presale: Wednesday, March 21 at
+        10 AM Eastern\r\nVenue and Community Neighborhood Presale: Thursday, March
+        22 at 10 AM Eastern\r\n\r\nAll presales end on Thursday, March 22 at 10 PM
+        Eastern\r\nPublic On Sale: Friday, March 23 at 10 AM Eastern","start_time":"2018-09-08T19:30:00-0400","place":{"name":"Forest
+        Hills Stadium","location":{"city":"Forest Hills","country":"United States","state":"NY","street":"1
+        Tennis Pl","zip":"11375"},"id":"584472168258499"},"id":"1607741412636444"},{"name":"Radiohead
+        | Philadelphia","description":"Radiohead announced Nort American Summer Tour!\n\nInfo
+        & Tickets: https:\/\/www.eatmytickets.com\/en\/radiohead-north-american-tour-2018\n\n\nRadiohead
+        will return to the United States for additional arena shows promoting their
+        latest album, A Moon Shaped Pool. The short tour takes place mostly in the
+        northeast, kicking off July 7th in Chicago and wrapping up August 1st in Philadelphia.","start_time":"2018-07-31T16:00:00-0400","end_time":"2018-07-31T18:00:00-0400","place":{"name":"Philadelphia","location":{"city":"Philadelphia","country":"United
+        States","state":"PA"},"id":"101881036520836"},"id":"207494879831482"},{"name":"serpentwithfeet
+        \/ Lee Mo at Johnny Brenda''s","description":"+++TUESDAY JUNE 26TH+++\n\nWXPN
+        Welcomes...\n\nSERPENTWITHFEET\nhttps:\/\/serpentwithfeet.bandcamp.com\/\n\nLEE
+        MO\nhttp:\/\/www.leemomusic.com\/\n\n7PM Doors \/ $12 \/ 21+","start_time":"2018-06-26T20:00:00-0400","place":{"name":"Johnny
+        Brenda''s","location":{"city":"Philadelphia","country":"United States","state":"PA","street":"1201
+        Frankford Avenue","zip":"19125"},"id":"29131433140"},"id":"216185552454999"},{"name":"Chromeo
+        at The Fillmore Philadelphia","description":"This is an All Ages event. Every
+        online ticket purchased for the 2018 tour includes a standard digital copy
+        of the new Chromeo album, Head Over Heels. Instructions on how to redeem your
+        copy will be sent via email on release day (date yet to be confirmed).\n\nSale
+        Dates and Times:\n\nPublic Onsale : Fri, 2 Feb 2018 at 10:00 AM\n\nLive Nation
+        Mobile App Presale : Thu, 1 Feb 2018 at 10:00 AM\n\nArtist Presale : Tue,
+        30 Jan 2018 at 12:00 PM\n\nSpotify Presale : Wed, 31 Jan 2018 at 10:00 AM\n\nTicketmaster
+        Presale : Thu, 1 Feb 2018 at 10:00 AM\n\nVIP Package Presale : Tue, 30 Jan
+        2018 at 10:00 AM\n\nVIP Package Public Onsale : Fri, 2 Feb 2018 at 10:00 AM\n\nLive
+        Nation Presale : Thu, 1 Feb 2018 at 10:00 AM","start_time":"2018-06-19T20:00:00-0400","place":{"name":"The
+        Fillmore Philadelphia","location":{"city":"Philadelphia","country":"United
+        States","state":"PA","street":"29 E Allen St","zip":"19123"},"id":"824047037631632"},"id":"1647693738610920"},{"name":"WXPN
+        Welcomes Mondo Cozmo","description":"This is an All Ages event. Doors open
+        at 7:00 PM.\n\nSale Dates and Times:\n\nPublic Onsale : Fri, 16 Mar 2018 at
+        12:00 PM\n\nLive Nation Mobile App Presale : Thu, 15 Mar 2018 at 10:00 AM\n\nLive
+        Nation Presale : Thu, 15 Mar 2018 at 10:00 AM","start_time":"2018-06-19T20:00:00-0400","place":{"name":"The
+        Fillmore Philadelphia","location":{"city":"Philadelphia","country":"United
+        States","state":"PA","street":"29 E Allen St","zip":"19123"},"id":"824047037631632"},"id":"186985648581077"},{"name":"West
+        Philly Porchfest 2018!","description":"It''s official!  The third annual West
+        Philly Porchfest is coming fast on June 2ne.  Save the date, tell your neighbors,
+        start thinking about the shows you want to host \/ play \/ attend... and stay
+        tuned for more info!\n\nSign your porch show up today at https:\/\/goo.gl\/forms\/a3QMTaa1w2qrBs1H2","start_time":"2018-06-02T12:00:00-0400","end_time":"2018-06-02T18:00:00-0400","place":{"name":"West
+        Philadelphia"},"id":"336958080156318"},{"name":"Camp Phuckit Presents: Prom
+        Night (A phormal affair)","description":"Camp Phuckit (PEX, LoveBurn) is back
+        at it again! This time, we''re bringing you a One-Of-A-Kind event and we have
+        just one question for you..... will you go to PROM with us?!\n\nOn Friday
+        May 18th, we are rolling out the glitter carpet and taking you back in time.  Whether
+        you never went to your Prom, want a \"do-over,\" or just want to have a good
+        time and say \"Hey world-look at me now!!!\" - this event promises to create
+        lasting memories.\n\nWe will be transforming Warehouse on Watts into the wildest
+        prom you have ever seen, as only Camp Phuckit can, for an UNFORGETTABLE night.
+        Come be a sassy prom \"Queen\" or \"King,\" geek or freak, or even a playa
+        prince or princess!  Maybe one of you will even wear the Camp Phcukit crown
+        for the evening ;)\n\nHave your picture taken in front of one of our interactive
+        prom backdrops, and make sure you are dressed in your prom best and  be sure
+        to be on your worst behavior as our Camp Phuckit chaperones will be watching
+        and choosing who will be in the running to be crowned \"King\" and \"Queen\"!\n\nOur
+        musical entertainment for the evening includes the Renegade Masters making
+        their Philly debut! The dynamic duo will be doing a very special LIVE performance
+        and DJ set along with some of Philly''s favorite DJ''s and our very special
+        MC for the evening Michael Nighttime!\n\nThis event is going LATE and tickets
+        are expected to sell out so don''t miss out!\n\nDJ Lineup:\n\nRenegade Masters
+        (NYC) \nSoup \/ Nervous Records \/ King Street Sounds\nhttp:\/\/soundcloud.com\/renegade-masters-nyc\n\nDavidson
+        Ospina (PHL\/NYC)\nPEX \/ Ospina Digital\nhttps:\/\/soundcloud.com\/davidson-ospina\n\nIANN
+        (PHL)\nCamp Phuckit \/ Big Puffy Yellow\nhttps:\/\/www.mixcloud.com\/IamIANN\/\n\nOpening
+        Set by Michael Nighttime\n\nMonster Camp Phuckit sound by Audio Firm\n\nMORE
+        TBA\n-----------------------------\nCostumes strongly encouraged \n21 and
+        over\nCash bar (ATM on premises) \n\n10pm-Late\nWarehouse on Watts \/ W.o.W.\n923
+        N. Watts St.\nPhiladelphia, PA 19123\n\nProceeds from party are going to fund
+        the Camp  Phuckit Burning Man Project.  Hope to see you in the dust this year.","start_time":"2018-05-18T22:00:00-0400","end_time":"2018-05-19T05:00:00-0400","place":{"name":"Warehouse
+        on Watts","location":{"city":"Philadelphia","country":"United States","state":"PA","street":"923
+        N. Watts St.","zip":"19123"},"id":"1671796969769837"},"id":"252613368640899"},{"name":"160
+        feat. Slick Shoota (Teklife)","description":"Full details to follow.","start_time":"2018-05-11T22:00:00-0400","end_time":"2018-05-12T02:00:00-0400","place":{"name":"Kung
+        Fu Necktie","location":{"city":"Philadelphia","country":"United States","state":"PA","street":"1250
+        N Front St","zip":"19122"},"id":"53209401403"},"id":"247994705770192"},{"name":"SoulnSol
+        2018 Season Kickoff","description":"Starting 2018 off with a BANG! The SoulnSol
+        season kickoff will commence in April this year - more specifically on Sunday,
+        April 29th at the infamous Rock Garden. More details will follow shortly.
+        \n\nLounge out in the sun and enjoy some music & good times on a lazy Sunday
+        afternoon. \n\nBYOB - bring your own blanket\n& sunglasses & frisbees & snacks
+        & friends & good vibrations\n\nbicycling to this location from anywhere in
+        the city is easy & highly encouraged.","start_time":"2018-04-29T13:00:00-0400","end_time":"2018-04-29T20:00:00-0400","place":{"name":"Glenndinning
+        Rock Garden","location":{"city":"Philadelphia","country":"United States","state":"PA","street":"Kelly
+        Dr &  Brewery Hill Dr","zip":"19130"},"id":"150494101681946"},"id":"169002457151849"},{"name":"OUTPOST
+        | Klockworks presents Photon New York: Ben Klock\/ Marcel Dettmann\/ Dax J\/
+        Etapp Kyle at Avant Gardner","description":"Tickets on Ticketfly: http:\/\/bit.ly\/OUTPOST_PHOTON\n\nOUTPOST
+        presents the North American debut of PHOTON, Ben Klock\u2019s boundary-pushing
+        event series Saturday, April 28 in the Great Hall at Avant Gardner Brooklyn.
+        The Klockworks label boss will deliver his incendiary blend of heart-pounding
+        and emotive techno alongside fellow Berghain resident MARCEL DETTMANN, prolific
+        producer Dax J and Ukrainian virtuoso Etapp Kyle.  Influenced by the notion
+        of a photon, the spectacular PHOTON series combines unique sound, light, and
+        architecture to present a multi-sensory experience in a meticulously-curated
+        space.\n\nLocated in the heart of Brooklyn\u2019s industrial center, the cavernous
+        15,000 square foot Great Hall within the Avant Gardner event complex, also
+        home to the beloved Brooklyn Mirage, is the perfect location to introduce
+        the mesmeric interplay of PHOTON light and sound to the North American audience.
+        Avant Gardner will join the ranks of prestigious venues that have hosted PHOTON
+        including Printworks London and Amsterdam\u2019s Gashouder. The production
+        team at OUTPUT will transform the Great Hall, bringing their standard of excellence
+        to the impressive space including 300 lighting fixtures, a massive Kv2 sound
+        system, and expert technical programming.\n\nOutpost Presents Photon:\nBen
+        Klock\nMARCEL DETTMANN\nDax J\nEtapp Kyle\n\n21+\nDOORS AT 10PM\nAvant Gardner:
+        140 Stewart Ave, Brooklyn","start_time":"2018-04-28T22:00:00-0400","end_time":"2018-04-29T04:30:00-0400","place":{"name":"Avant
+        Gardner","location":{"city":"New York","country":"United States","state":"NY","street":"140
+        Stewart Avenue","zip":"11237"},"id":"154172865063313"},"id":"2073028486274622"},{"name":"SunFunOne:
+        Park Party LiftOff","description":"((A Dj Nysus & Friends Jawn))\n\nIt''s
+        a bird! It''s a plane! It''s a... PARK PARTY!\n\nJoin us for some Sun + Space
+        to mark the official start of park party season! \nUFO sightings have us a
+        breaking out the tinfoil hats, bumpin beats, and prepping our escape pods.
+        \n\nSpaceJockeys Straight Outta the WormHole: listed in no order\n\nHoju Pockets\nMuramasa\nDeep
+        C\nJeff Omega\nDJ Nysus\nMack Turner\nJay Shok\nProblem Unit\n\n\nAstro-babes,
+        aliens, and space slickers are welcome to party, and costumes are highly encouraged!
+        \nLayers are recommended, especially since it might get chilly in the evening.  \nHoops,
+        flow toys, blankets, and frisbees are all welcome. \nLEASHED dogs are also
+        invited--must be dog+people friendly!\nDon''t forget to bring whatever else
+        you need to appease and worship our alien overlords\nPACK-IN, PACK-OUT: Whatever
+        you bring in, you must bring out! Take your trash with you! \n\nThis party
+        is destined to be out of this world....\n\n*If you''re interested in volunteering,
+        please contact Ariane Cordelia Moon.\nThis event is weather-permitting and
+        will be postponed if needed. Do the hoodoo voodoo for nice weather!","start_time":"2018-04-28T12:00:00-0400","end_time":"2018-04-28T21:00:00-0400","place":{"name":"Glenndinning
+        Rock Garden Brewery Hill Dr, Philadelphia, Pa 19121"},"id":"397160460800499"},{"name":"Winkdown
+        feat. Josh Wink [open to close] at WOW","description":"Shakedown, goodie &
+        Ovum Recordings present...\n\nSaturday, April 21st 2018\n\n:: WINKDOWN ::\nno.
+        8\n\nEach & every year we celebrate our beloved Josh Wink''s birthday! Where
+        the birthday boy lays done a wicked open to close set! This year we do it
+        for the 8th time : ) Get ready to be inspired!\n\n- open to close set by -\n\nJosh
+        Wink\n\n:::::::::::::::::::::::::::::::::::::::::::::\n\n10pm - 4am\n\n\u0040
+        Warehouse on Watts\n923-929 N Watts St.\n \n$15 tixs available until March
+        21st \u0040\nbit.ly\/WINKDOWN8","start_time":"2018-04-21T22:00:00-0400","end_time":"2018-04-22T04:00:00-0400","place":{"name":"Warehouse
+        on Watts","location":{"city":"Philadelphia","country":"United States","state":"PA","street":"923
+        N. Watts St.","zip":"19123"},"id":"1671796969769837"},"id":"334328427074850"},{"name":"The
+        Disco Biscuits - An Evening with The Disco Biscuits","description":"This is
+        an All Ages event.\n\nSale Dates and Times:\n\nPublic Onsale : Fri, 19 Jan
+        2018 at 10:00 AM\n\nLive Nation Mobile App Presale : Thu, 18 Jan 2018 at 10:00
+        AM\n\nLive Nation Presale : Thu, 18 Jan 2018 at 10:00 AM","start_time":"2018-04-21T20:00:00-0400","place":{"name":"The
+        Fillmore Philadelphia","location":{"city":"Philadelphia","country":"United
+        States","state":"PA","street":"29 E Allen St","zip":"19123"},"id":"824047037631632"},"id":"2093591394209253"},{"name":"Out
+        of the Beardspace + The Underwater Sounds + Nik Greeley & The Operators at
+        MilkBoy 4\/21","description":"A celebration in threes: Beardfest 2018 (June
+        14-16) pre-party, Nik Greeley & Zach LoPresti''s birthday show & a reunion
+        for two bands!\n\nOut of the Beardspace (Reunion show)\nThe Underwater Sounds
+        (Reunion show)\nNik Greeley & The Operators \nSaturday, April 21st 2018\nat
+        MilkBoy\n\n7pm Doors\n8pm Show\n21+\n\n$15 Advance \/ $18 Day of Show\nTickets
+        on sale now: http:\/\/bit.ly\/TheUnderwaterSoundsMB","start_time":"2018-04-21T20:00:00-0400","end_time":"2018-04-21T23:59:00-0400","place":{"name":"MilkBoy","location":{"city":"Philadelphia","country":"United
+        States","state":"PA","street":"1100 Chestnut St","zip":"19107"},"id":"120702984703812"},"id":"1776174162685888"},{"name":"Eats
+        Everything + Fisher at Coda","description":"Eats Everything + Fisher (Follow
+        The Fish)\n\n$30 open bar (limited, only available online)\n\nVIP Tables:
+        http:\/\/bit.ly\/2tkPr1b\n\nCoda Newsletter - http:\/\/bit.ly\/CodaSignUp\nUpcoming
+        Events - http:\/\/bit.ly\/CodaEvents\n\nCoda\n1712 Walnut Street, Philadelphia\nPhone:
+        (267) 639-4630\nwww.codaphilly.com","start_time":"2018-04-20T23:00:00-0400","end_time":"2018-04-21T03:00:00-0400","place":{"name":"Coda","location":{"city":"Philadelphia","country":"United
+        States","state":"PA","street":"1712 Walnut St","zip":"19103"},"id":"830696823628944"},"id":"389650964794783"},{"name":"Dark
+        Tower V3: Ooh Baby I Like It Raw!","description":"Welcome members of our beautiful
+        community to another gathering of like-minded individuals. We invited more
+        friends from around the globe to share their special talents. \n\nBefore we
+        get to all the fun details we want to set out intentions. We create this space
+        for you to come and explore yourself through music, art, and self-expression.
+        Our goal is to help foster a place where people feel safe.  If at any time
+        something happens that makes you feel unsafe, please come to us. The people
+        working the coat check will be able to put you in touch with the person''s
+        who handle these situations. \n\nWe''ve hired an outside security team; you
+        might have met them if you ever went to Big Dub Festival. They are 100\u0025
+        professional, and here to help you have an amazing time. \n\nWe will be making
+        some improvements to the flow of this event and hope you enjoy them. \n\nPlease
+        let us know if there''s anything you think we should be doing better. \n\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\n\n\n*Special
+        Guests* \nCodes - STMPD RCRDS, NYC \nhttp:\/\/www.facebook.com\/CodesHouse\/
+        http:\/\/bit.ly\/CodesSpotify \n\nFritz Carlton - Desert Hearts \/\/ This
+        Ain''t Bristol, LA\nhttp:\/\/soundcloud.com\/fritzcarlton\n\nADMN -  Infiltr8:Celebr8
+        \/\/ Sampled Recordings, Detroit!\nhttps:\/\/soundcloud.com\/admn\n\nJerome
+        Joyce will be on the mic bringing the rhymes and fun times! \n\n\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\u00ab\n\nThe
+        \"36 Chambers\" hosted by Actual Records and Badvss RAVES\n\nProblem Unit\nHooded
+        Leaders\nEthan\nMojo Risin\nJay Shok\nBlack Terminator | Kim Diamond feat
+        Musho \nMusho b2b Jay Kountree\n\n\n\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb
+        \n\nThe \"Jungle\" presented by Camp Phuckit \n\nOmni MC (Live)-Setu Tribe\nRob
+        Paine (Dub Reggae Set)-Worship Records\/Solomonic Sound\nJerome Joyce (Live)\nNobi-Fort
+        Knox Five Records\nPaul Oh-Organica Sounds\nIANN-Camp Phuckit\/Big Puffy Yellow\n\n\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb
+        \n\n\"Chamber No 9\" presented by Symbiotic \n\nBunk Buddha\nNormal Trade
+        vs Hogan\nDali vs Dj Amp\nBill & Ed\nDeinfamous\nLuxe & bass\nCentsless\n\n\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb
+        \n\nThe \"Techno Basement\" hosted by Labyrinth \n\nADMN  \nFrancois G  \nMiss
+        Chloe  \nBrian Creswell  \nEkim Navillus\n\n\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\u00bb\nBody
+        Painting by Bodypaint.me\nVISUALS by Funktaxi 1533\nSound by Nobi \nLighting
+        by Super Collider\nFlyer by Rolf Evan Cunningham\nHosted by Avi David","start_time":"2018-04-20T22:00:00-0400","place":{"name":"19134"},"id":"2152285258332900"},{"name":"Alter\/Ego","description":"*You\u2019re
+        cordially invited to the opening night of Alter\/Ego*\n\nal\u2022ter ego \n:a
+        second self or different version of\u00ad oneself:\n\nWhere have you been
+        hiding? And what\u2019s holding you back? \n\nIn the spirit of parties past,
+        Alter\/Ego welcomes you to express and expand your \u2018self\u2019.  We\u2019re
+        creating a sanctuary. An immersive experience. Dedicated to connection. And
+        centered around movement --\n\nWe invite you to bring your other self -- or
+        join us in finding it.\n\nand be enveloped by a staggering night of music,
+        installations, and the collective spirit. \n\n\nMAIN ROOM\n\u02d9\u02d9\u02d9\u02d9DJ
+        Delish........................ https:\/\/bit.ly\/2GndzaJ\n\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9Y\u00f4suke
+        DJ.................. https:\/\/bit.ly\/2Eawvn8\n\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9Naang
+        Taani (NYC). https:\/\/bit.ly\/2GoU3Xo\n\nPerformances by:\n\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9Life
+        on Planets (b''more)\n\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9extant........
+        https:\/\/bit.ly\/2pQqnfK\n\n\nLOUNGE\/BAR ROOM\n\u02d9\u02d9\u02d9\u02d9Wall
+        Peeler (NYC)......... https:\/\/bit.ly\/2pY4v0S\n\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9Kwan.........................
+        https:\/\/bit.ly\/2uAtbST\n\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9\u02d9DJ Lexi....................
+        https:\/\/bit.ly\/2GrufxK\n\n\n$10\n($7 before 11)\n\u0040 Lacquer\n(West
+        Philly - DM for address)\nhttps:\/\/bit.ly\/2GeI4zv","start_time":"2018-04-20T22:00:00-0400","end_time":"2018-04-21T04:00:00-0400","place":{"name":"Lacquer"},"id":"201964417064144"},{"name":"Wonderlust:
+        Bicycle Day Disco! w\/ DEL + Tommy Hogunz","description":"\ud83d\udeb2 \ud83d\udeb2
+        \ud83d\udeb2 \ud83d\udeb2\n\nWONDERLUST: BICYCLE DAY DISCO!!!\n\nThis month
+        we are coming in hot! Being only 5 min walking distance from The Fillmore
+        and being Bicycle Day we would like to welcome you to our Unofficial Disco
+        Biscuits Bicycle Day Disco After Party! We will be starting late so just head
+        over after the show and show your ticket stub for half off entry price! We
+        will have plenty of great music and psychedelic vibes to cap off your night.
+        We cant wait to boogie with yall! See you there! \n\n\ud83d\udeb2 \ud83d\udeb2
+        \ud83d\udeb2 \ud83d\udeb2\n\nFeaturing...\n\nMusic\n- The Wonder Bars\nAn
+        electronic band from Philadelphia employing real musicians, live theatrics
+        and spontaneous improvisation. Focused on bringing a live element to the EDM
+        culture, The Wonder Bars, Tom, Timmy, Ryan, and Ray, have been a staple of
+        the Philadelphia underground for the past five years. Their superb musicianship
+        and production work, however, are only being discovered today by a new generation
+        of electronic music fans that are eager for a change in the status quo of
+        DJs and club parties, thanks to a recent push in releas. In their native Philadelphia,
+        however, the band is well known for playing some of the city''s most legendary
+        underground and mainstream venues, as well as hosting their own parties whose
+        acts also emphasize the crossover between live music and DJing.\nhttps:\/\/soundcloud.com\/wonderbars\/sets\/debut-album\n\n-
+        DEL\nhttps:\/\/soundcloud.com\/a-DEL-mix\nOne of Philadelphia''s pioneering
+        funky house DJs, DEL has been getting dance floors pregnant since before we
+        were all in diapers. His soulful, groovy track selection is common amongst
+        the end-of-summer rooftop parties that currently dominate our local scene,
+        and his collaborations with Davidson Ospina (as well as his own solo edits
+        of old disco tracks) have earned him acclaim far past the city limits. DEL''s
+        DO YOU WANNA BOOGIE? party is a staple of the Winter Music Conference \/ Miami
+        Music Week every year, and certainly gets us jealous for not being able to
+        make it down there yet!\n\n- Tommy Hogunz\nhttps:\/\/soundcloud.com\/tommy_hogunz\n\nLive
+        Painting\n- Lindsay Jamison Art & Yoga\nLindsay Jamison is a visual artist,
+        yoga and mindfulness instructor, workshop presenter and retreat facilitator.
+        Based in Philadelphia, Pennsylvania, she loves traveling, adventure and being
+        immersed in the natural world. Her mission is to make visual art, yoga and
+        mindfulness accessible to heal, inspire, empower and educate our community
+        at large. By exploring the constructs of the self using mandalas, mixed media
+        art, movement and mindfulness practices, she has gained deep insight into
+        her life\u2019s purpose. Currently, she is offering a variety of classes and
+        workshops for self development; planning a yoga retreat to Peru; co-facilitating
+        a women''s festival called Emakume Gathering in Ridley Creek State Park; and
+        offering transformative life skills to the community. Please check out her
+        website for upcoming offerings. \nhttp:\/\/lindsayjamison.com\/home.html\n\n-
+        MsWritten Art-by Qori Moorehaul\nThe eclectic and erratic expressions from
+        inside the acronym riddled brain, of a self-proclaimed \"visual junky\".Commentary,
+        the life at large!\n\nMedia \n- Wook Vision Media\nhttp:\/\/www.wookvision.com\/\n\n\n...AND
+        MORE SPECIAL GUESTS TBA\n\n\ud83d\udeb2 \ud83d\udeb2 \ud83d\udeb2 \ud83d\udeb2\n\nThursday,
+        April 19th\n10pm-2am.\n$5 with Disco Biscuit Fillmore stub or WonderLust 4\/19
+        Flyer or before 11:30pm::$10 after 11:30pm::\nLiaison Room at Front Street
+        Cafe.\n\n\ud83d\udeb2 \ud83d\udeb2 \ud83d\udeb2 \ud83d\udeb2","start_time":"2018-04-19T22:00:00-0400","end_time":"2018-04-20T02:00:00-0400","place":{"name":"Liaison
+        Room at Front Street Cafe","location":{"city":"Philadelphia","country":"United
+        States","state":"PA","street":"1253 N. Front St.","zip":"19122"},"id":"2011036122462555"},"id":"894544844040874"},{"name":"The
+        Disco Biscuits with Let''s Danza!","description":"This is an All Ages event.\n\nSale
+        Dates and Times:\n\nPublic Onsale : Fri, 19 Jan 2018 at 10:00 AM\n\nLive Nation
+        Mobile App Presale : Thu, 18 Jan 2018 at 10:00 AM\n\nLive Nation Presale :
+        Thu, 18 Jan 2018 at 10:00 AM","start_time":"2018-04-19T20:00:00-0400","place":{"name":"The
+        Fillmore Philadelphia","location":{"city":"Philadelphia","country":"United
+        States","state":"PA","street":"29 E Allen St","zip":"19123"},"id":"824047037631632"},"id":"210153312865137"},{"name":"The
+        Mysteries, Barnes, Lady HD at Ortlieb''s","description":"The Mysteries, Barnes,
+        Lady HD at Ortlieb''s","start_time":"2018-04-18T20:00:00-0400","place":{"name":"Ortlieb''s","location":{"city":"Philadelphia","country":"United
+        States","state":"PA","street":"847 N 3rd St","zip":"19123"},"id":"326159524087218"},"id":"201468470615254"},{"name":"Bangarang
+        Presents: Spring Fling - Sprout''n the Beats","description":"After a successful
+        event last summer, the Bangarang crew is excited to head back to West Chester
+        for a bit of spring flingin at Sprout Music Collective. We''re all ready for
+        winter to be over! On Saturday April 14th, we invite you to join us in celebrating
+        the beauty of spring, with a day-to-night, indoor and outdoor event. There
+        will be over 11-hours of music, featuring Philadelphia and local area talent
+        of various genres, food served by Sprout Collective in the outdoor area, deco,
+        live painting, local vendors, and more! \n\n\nMUSIC LINEUP: \n\nBANGARANG
+        Beat Corps (Philadelphia, PA)\n**Featuring special b2b DJ tag sets all night:\nhttps:\/\/soundcloud.com\/bangarangsbeats\n\nDirty
+        Something\n(Jeff Omega b2b Alex The Great) - house & bass\n\nJaq''n the Boxx\nJackie
+        G b2b DSquared) - house & bass \/ clam jams\n\nBoys Club \n(Jesse Johns b2b
+        Dylan Moxie) - uk garage \/ bassline\n\nDeep & Dark \n(DJ Deep C b2b Nate
+        Dark) - deep tech w\/ splashes of bright melodies\n\nDerrick Nathaniel b2b
+        Jordan Flixx -  hip-hop \/ funk \/ etc\n\n\nSPECIAL GUESTS:\n\nBunk Buddha
+        (Baltimore) \nhttps:\/\/soundcloud.com\/bunkbuddha\n\nGordon Bombay (Philadelphia)
+        - house & bass\nhttps:\/\/soundcloud.com\/itsgordonbombay\n\nAttic tapes.
+        (Philadelphia) - original music \/ sample driven beats combining elements
+        of soul, doowop, swing, motown and hip hop\nhttps:\/\/soundcloud.com\/attic_tapes\n\nDexter
+        Rutecki b2b XL (West Chester) - bass \/ bassline house \/ deep dubs\nhttps:\/\/soundcloud.com\/bryanwinther\nhttps:\/\/soundcloud.com\/xldubs\n\nMojo
+        RisiN (West Chester) - Psybass\nhttps:\/\/soundcloud.com\/mojorisin_deejay\n\nIllusionull
+        (Philadelphia) - dubstep \/ bass music \/ experimental bass\nhttps:\/\/soundcloud.com\/illusionull\n\nToo
+        Much Tuna (Philadelphia) - house \/ tech house\nhttps:\/\/soundcloud.com\/itstoomuchtuna\n\nMax
+        Casual (West Chester) - halftime \/ bass\nhttps:\/\/soundcloud.com\/maxcasualdj\n\nOutside:
+        \n4:00 PM Max Casual\n5:30 PM Derrick Nathaniel b2b Jordan Flixx\n7:00 PM
+        Attic Tapes. \n8:00 PM MojoRisin\n9:00 PM Bunk Buddha\n\nInside: \n4:00 PM
+        Too Much Tuna\n5:00 PM Deep & Dark (Deep C b2b Nate Dark)\n6:30 PM Illusionul
+        \n7:30 PM Boys Club (Jesse Johns b2b Dylan Moxie)\n9:00 PM Dirty Something
+        (Jeff Omega & Alex the Great)\n1030 PM Jaq''n the Boxx (Jackie G & DSquared)\n1200
+        AM Gordon Bombay \n130 AM Dexter Rutecki b2b XL\n\nVendors:\nThe Jewels of
+        Eli\nNue gallery\nUZart361 \nHellawraps\nArt by Soobi\nArt by Cori Anne \n\n21+
+        \n$10 at door \n(Special $5 entry from 4-5 PM and 130-3 AM)\n\nLasers and
+        Projections provided by Eriq Ellixson! \n\nFlow toys are welcomed and encouraged!
+        \n\n\nhttp:\/\/www.bangarangphiladelphia.com\/\nhttps:\/\/soundcloud.com\/bangarangsbeats","start_time":"2018-04-14T16:00:00-0400","end_time":"2018-04-15T03:00:00-0400","place":{"name":"Sprout
+        Music Collective","location":{"city":"West Chester","country":"United States","state":"PA","street":"130
+        E Prescott Aly","zip":"19380"},"id":"1446280548970808"},"id":"357263404791732"},{"name":"Saturday
+        In The Park with LEFT RITE","description":"It''s nice out ya feel me?\n\nReally
+        - there''s nothing quite like coming out of hibernation and smelling the warm
+        earthy air as life returns to our habitat. We want to crystallize that feeling
+        with a gathering of friends and families and everyone is welcome.\n\nBYO-sage\/\/palo
+        santo\/picnic\/blankets\/hammock\/libations\/frisbee\/etc\n\nThis is a family,
+        dog, horse, and other animal friendly event. Being respectful to others is
+        ez and cool and we''re about it.\n\nLEFT RITE soundsystem\nLEFT RITE resident
+        djs\n\nIn no particular order:\nDeco Soul\nMr Falcon\nPhil Yeah\nBeeTee Beats\nAdam
+        East\nGummibear\nSarahCuda\n\nWe love our wonderful parks! Please help us
+        keep the park clean by taking your trash with you after the event and helping
+        everyone to do the same.\nAnd if you want to show the parks how much you appreciate
+        them consider making a donation here: https:\/\/www.philaparks.org\/donate-now\/","start_time":"2018-04-14T12:00:00-0400","end_time":"2018-04-14T19:00:00-0400","place":{"name":"Glenndinning
+        Rock Garden","location":{"city":"Philadelphia","country":"United States","state":"PA","street":"Kelly
+        Dr &  Brewery Hill Dr","zip":"19130"},"id":"150494101681946"},"id":"292535841281102"},{"name":"SFM
+        Philly Presents: Altitude w\/ Miss Melera","description":"Tickets:\nhttps:\/\/www.residentadvisor.net\/events\/1088042\n\nMISS
+        MELERA\n\nFor the past decade, the Amsterdam based Miss Melera has been absorbing
+        the essence behind traditional genres such as deep, tech house and techno
+        and twisting them into a melodic confection that is both fresh, timeless and
+        completely her own.\nIn the past years she has played high profile dates in
+        Europe, Asia, South and North America. In 2012 she has started her monthly
+        radio show and event called ''COLOURIZON''. Her show is broadcast on several
+        radio stations worldwide and increasingly popular on her Soundcloud profile.
+        \nAs COLOURIZON developed quickly into a global phenomenon, Miss Melera was
+        invited to play to\nin front of her fans all over the world. The success of
+        the radio broadcast turned into a successful touring career, with invites
+        to perform in famous venues like D-Edge (Sao Paulo, Brazil), Warung\n(Itaja\u00ed,
+        Brazil), Womb (Tokyo, Japan), KaterBlau (Berlin, Germany), Oval Space\/Pickle
+        Factory (London, UK), Le Bikini (Toulouse, France), Rote Fabrik (Zurich, Swiss),
+        Harry Klein (Munchen,\nGermany), Niceto (Buenos Aires, Argentina), Nest (Toronto,
+        Canada), Baum (Bogota, Colombia) and of course her Dutch hometown Amsterdam
+        where she is hosting a COLOURIZON residency at De Marktkantine.\nHer fast-growing
+        fanbase is embracing her latest release, \u2018Nirvana\u2019 on the English
+        label Polymath which follows after a remix on Traum and her EP \u2018Magenta\u2019
+        on Chapter 24 Records - including remixes by Dave Seaman and Jonas Saalbach.\nWith
+        releases on Parquet Recordings, Einmusika Recordings, a collaboration with
+        Eelke Kleijn,\nOlivier Weiter & Arjuna Schiks on the WEITER label, Chapter
+        24 Records, Traum, Polymath and her upcoming tour schedule, Miss Melera will
+        give global audience a chance to discover her vision of electronic music.
+        \nWhen you\u2019re under Miss Melera\u2019s spell:\nYou won\u2019t stop moving.\n\nWebsites\nwww.missmelera.com\nwww.facebook.com\/missmelera\nwww.soundcloud.com\/missmelera\n\n\nJAY
+        HILL [King Street Records\/ Induction Muzik]:\n\nhttps:\/\/www.facebook.com\/ladyjayhill\/\nhttps:\/\/soundcloud.com\/jayneuf\n\nBLUESHIFT
+        [Nervous\/ Madhouse]:\n\nhttps:\/\/www.facebook.com\/blueshiftmusic\/\nhttps:\/\/soundcloud.com\/blueshiftmusic\n\nGUMMIBEAR
+        [Left Rite]:\n\nhttps:\/\/www.facebook.com\/gummibearmusic\/\nhttps:\/\/soundcloud.com\/gummibearroar\n\nLEO
+        [sic]:\nhttps:\/\/www.facebook.com\/leopoldsic\/\nhttps:\/\/soundcloud.com\/leodjprod\n\nHADIDA
+        (SFM Philly)\n\nBODHIN (SFM Philly)\n\nBYO \/\/ 21+ \/\/ Free H2O \/\/ No
+        BS","start_time":"2018-04-13T23:59:00-0400","end_time":"2018-04-14T07:00:00-0400","place":{"name":"TBA","location":{"city":"Philadelphia","country":"United
+        States","state":"PA","zip":"19106"},"id":"1815415545139121"},"id":"513313585736991"},{"name":"160Philly:
+        2-Year Anniversary","description":"We are excited to announce the line-up
+        for our second birthday featuring the return of one of our favorite DJs plus
+        a debut from one of New York''s up and coming.\n\nDj Ripley\nHEAVY NYC | DUTTYARTZ\n\nNeon
+        Nuckles\nBEAT ASSEMBLY | UPTOWN, NY\n\nwith resident DJ\n\nSideswipe\nIBERIAN
+        JUKE | 160PHILLY","start_time":"2018-04-13T22:30:00-0400","end_time":"2018-04-14T02:00:00-0400","place":{"name":"Kung
+        Fu Necktie","location":{"city":"Philadelphia","country":"United States","state":"PA","street":"1250
+        N Front St","zip":"19122"},"id":"53209401403"},"id":"570615213325562"}],"paging":{"cursors":{"before":"QVFIUlY3T3R1V1BoWnJDWVBTdG5lelFQaGxPb21ILW9ZAU04tSjctcGdBX0oycVY0OTA2SDQ3SlphY2ZADVzlaZA01VdmJwbGh2TXpPZA0NKQ2czbEN0MzlILXVn","after":"QVFIUnY4QlhKMzJuSFBTUS1qTmtQeWJpV0V1R0lyUUdGS0xwQ1VOWm9Ua0xDcDdhTTEzbEktZAzRwOFpWOUxobkE0VHZATX2pTWEcxMXhFd0pURVo4NDhsdmpB"},"next":"https:\/\/graph.facebook.com\/v2.12\/10210981218794464\/events?access_token=EAACuX4ZA8sRkBAIYB405JpljA4P5gY1oxmLl86CFZAOy2ZBz6zRxagKgLbwIYF0vo7IWZCtAPtMTPCt9ZC287kdhUzgXPc9xvL3GPIxQlfxPth0YxGNQL7Ggs7FfgmlhwYnXw3z1ykc3ZBfwmWZBZBqVhJlR3AZAEcQYlqnJ8oJr1kq4nWYSnJy5ZCzHiLZCUXxse1o5HAcvH4RpwZDZD&fields=name\u00252Cdescription\u00252Cstart_time\u00252Cend_time\u00252Cplace\u00257Bname\u00252Clocation\u00257Bcity\u00252Ccountry\u00252Cstate\u00252Cstreet\u00252Czip\u00257D\u00257D&limit=25&after=QVFIUnY4QlhKMzJuSFBTUS1qTmtQeWJpV0V1R0lyUUdGS0xwQ1VOWm9Ua0xDcDdhTTEzbEktZAzRwOFpWOUxobkE0VHZATX2pTWEcxMXhFd0pURVo4NDhsdmpB"}}'
+    http_version: 
+  recorded_at: Sun, 15 Apr 2018 21:52:31 GMT
+recorded_with: VCR 4.0.0
