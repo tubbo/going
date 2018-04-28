@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class CalendarsControllerTest < ActionDispatch::IntegrationTest
-  delegate :encode_credentials, to: ActionController::HttpAuthentication::Token
+  delegate :encode_credentials, to: ActionController::HttpAuthentication::Basic
 
   setup do
     @user = users(:one)
@@ -22,9 +22,8 @@ class CalendarsControllerTest < ActionDispatch::IntegrationTest
 
   test 'download user calendar' do
     VCR.use_cassette :facebook_events do
-      @user.update!(facebook_access_token: 'EAACuX4ZA8sRkBAIYB405JpljA4P5gY1oxmLl86CFZAOy2ZBz6zRxagKgLbwIYF0vo7IWZCtAPtMTPCt9ZC287kdhUzgXPc9xvL3GPIxQlfxPth0YxGNQL7Ggs7FfgmlhwYnXw3z1ykc3ZBfwmWZBZBqVhJlR3AZAEcQYlqnJ8oJr1kq4nWYSnJy5ZCzHiLZCUXxse1o5HAcvH4RpwZDZD')
-      get calendar_path(format: 'ical'), headers: {
-        'Authorization' => encode_credentials(@user.token)
+      get calendar_path(format: :ics), headers: {
+        'Authorization' => encode_credentials(@user.facebook_id, @user.token)
       }
 
       assert_response :success

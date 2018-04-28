@@ -3,10 +3,9 @@
 # Facebook events calendar for a given User.
 class Calendar
   EVENTS_QUERY = 'events?fields=name,description,start_time,end_time,place{name,location{city,country,state,street,zip}}'
-  delegate :to_ical, to: :@calendar
 
-  def initialize(access_token)
-    @token = access_token
+  def initialize(user)
+    @user = user
     @calendar = Icalendar::Calendar.new
   end
 
@@ -14,6 +13,15 @@ class Calendar
     @events ||= graph.get_connections('me', EVENTS_QUERY).map do |facebook_event|
       create_event_from(facebook_event)
     end
+  end
+
+  def cache_key
+    [@user.cache_key, :calendar]
+  end
+
+  def version
+    return Time.now.to_i unless events.any?
+    events.sort { |e1, e2| e1.dtstart <=> e2.dtstart }.first.dtstart.to_i
   end
 
   def to_ical
@@ -25,7 +33,7 @@ class Calendar
   private
 
   def graph
-    @graph ||= Koala::Facebook::API.new(@token)
+    @graph ||= Koala::Facebook::API.new(@user.facebook_access_token)
   end
 
   def create_event_from(facebook_event)

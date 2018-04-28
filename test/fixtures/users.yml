@@ -6,7 +6,7 @@ one:
   email: one@example.com
   token: <%= SecureRandom.hex %>
   facebook_id: 1234567890
-  facebook_access_token: <%= SecureRandom.hex %>
+  facebook_access_token: EAACuX4ZA8sRkBAIYB405JpljA4P5gY1oxmLl86CFZAOy2ZBz6zRxagKgLbwIYF0vo7IWZCtAPtMTPCt9ZC287kdhUzgXPc9xvL3GPIxQlfxPth0YxGNQL7Ggs7FfgmlhwYnXw3z1ykc3ZBfwmWZBZBqVhJlR3AZAEcQYlqnJ8oJr1kq4nWYSnJy5ZCzHiLZCUXxse1o5HAcvH4RpwZDZD
 
 two:
   name: User Two
