@@ -1,1 +1,1 @@
-<%= button_to t(:subscribe), url_for(format: 'ical') %>
+<%= button_to t(:subscribe), calendar_url_for(current_user), method: :get %>

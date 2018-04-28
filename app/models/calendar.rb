@@ -18,6 +18,7 @@ class Calendar
 
   def to_ical
     events
+    Rails.logger.info 'Generating calendar from Facebook events'
     @calendar.to_ical
   end
 

@@ -4,4 +4,5 @@ Koala.configure do |config|
 
   config.app_id = facebook[:app_id]
   config.app_secret = facebook[:app_secret]
+  config.api_version = 'v2.11'
 end

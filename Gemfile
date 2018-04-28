@@ -62,3 +62,10 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 end
+
+group :production do
+  # Use Sidekiq for background job processing and email delivery
+  gem 'sidekiq'
+  # Use Redis to store Rack::Cache HTTP caching data
+  gem 'redis-rack-cache'
+end

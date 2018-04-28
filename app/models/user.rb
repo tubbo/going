@@ -11,10 +11,10 @@ class User < ApplicationRecord
   validates :facebook_id, presence: true
 
   def self.from_omniauth(auth = {})
-    params = auth[:info].slice(:name, :email)
-    params[:token] = auth[:credentials][:access_token]
+    params = auth['info'].slice('name', 'email').symbolize_keys
+    params[:facebook_access_token] = auth['credentials']['token']
 
-    find_or_initialize_by(facebook_id: auth[:uid]).tap do |user|
+    find_or_initialize_by(facebook_id: auth['uid']).tap do |user|
       user.update!(params)
     end
   end

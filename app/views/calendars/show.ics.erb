@@ -1,0 +1,3 @@
+<% cache [current_user, :calendar], version: @calendar.version do %>
+  <%= @calendar.to_ical %>
+<% end %>
