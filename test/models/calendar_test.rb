@@ -3,7 +3,7 @@ require 'test_helper'
 class CalendarTest < ActiveSupport::TestCase
   setup do
     @user = users(:one)
-    @calendar = Calendar.new(@user.token)
+    @calendar = Calendar.new(@user)
     @facebook_event = {
       name: 'Event Name',
       description: 'Description of the event',
@@ -40,5 +40,16 @@ class CalendarTest < ActiveSupport::TestCase
     assert_includes @calendar.to_ical, 'VERSION:2.0'
     assert_includes @calendar.to_ical, 'BEGIN:VEVENT'
     assert_includes @calendar.to_ical, "SUMMARY:#{@facebook_event[:name]}"
+  end
+
+  test 'generate cache key from user id' do
+    assert_includes @calendar.cache_key, @user.cache_key
+    assert_includes @calendar.cache_key, :calendar
+  end
+
+  test 'generate cache version from most recent event start time' do
+    refute_empty @calendar.recent_events
+    assert_equal @calendar.recent_events.first, @calendar.most_recent_event
+    assert_equal 1.hours.from_now.to_i, @calendar.version
   end
 end

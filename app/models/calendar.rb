@@ -21,7 +21,15 @@ class Calendar
 
   def version
     return Time.now.to_i unless events.any?
-    events.sort { |e1, e2| e1.dtstart <=> e2.dtstart }.first.dtstart.to_i
+    most_recent_event.dtstart.to_i
+  end
+
+  def most_recent_event
+    recent_events.first
+  end
+
+  def recent_events
+    events.sort { |e1, e2| e1.dtstart <=> e2.dtstart }
   end
 
   def to_ical

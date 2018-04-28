@@ -20,4 +20,16 @@ class UserTest < ActiveSupport::TestCase
     assert user.valid?, user.errors.full_messages.to_sentence
     assert user.persisted?, 'Could not save User to the database'
   end
+
+  test 'user has a calendar' do
+    user = users(:one)
+    assert_kind_of Calendar, user.calendar
+  end
+
+  test 'user generates a token when one does not exist' do
+    user = users(:one)
+    user.update!(token: nil)
+
+    assert user.token.present?
+  end
 end
