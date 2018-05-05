@@ -44,7 +44,7 @@ class CalendarTest < ActiveSupport::TestCase
 
   test 'generate cache key from user id' do
     assert_includes @calendar.cache_key, @user.cache_key
-    assert_includes @calendar.cache_key, :calendar
+    assert_includes @calendar.cache_key, 'calendar'
   end
 
   test 'generate cache version from most recent event start time' do
