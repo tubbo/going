@@ -1,5 +1,7 @@
 # Going: The Facebook Calendar for iCal
 
+[![Build Status](https://travis-ci.org/tubbo/going.svg?branch=master)](https://travis-ci.org/tubbo/going)
+
 Going is a Facebook Calendar reader that converts Facebook Events to
 iCal format, so you can subscribe in your calendar. It automatically
 filters out events you haven't explicitly said you are "Going" to, or
