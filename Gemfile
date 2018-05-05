@@ -29,6 +29,8 @@ gem 'omniauth-facebook'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # iCalendar file format generation
 gem 'icalendar'
+# Static pages
+gem 'high_voltage'
 
 group :development, :test do
   # Call 'binding.pry' anywhere in the code to stop execution and get a debugger console
