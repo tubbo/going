@@ -60,7 +60,7 @@ Rails.application.configure do
   config.cache_store = :redis_cache_store, {
     url: credentials.redis_url,
     compress: true,
-    namespace: "going_#{Rails.env}"
+    namespace: 'rails_cache'
   }
 
   # Use Rack::Cache as an HTTP cache.
