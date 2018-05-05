@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-2
+deploy:
+  provider: heroku
+  api_key:
+    secure: Hq2XciJuPFPVReoPkIX/64/Ol8/geFjpGWLHt/t1vw+BHz/yDbokFQUmQAQxbjS92cBCpdxmRhMaHA3uxgMLuuJUOEAcdlbKnEHhnsmWunuSh4tuRvj6bey8iU+uVMwVO5NTboI7aCcQvoLip89TDyDpmJv+ryo/3EX06EuFDb8G2dTqzJgLF3KG0K32hPmnzRsUGZClmzzDBKoNLLuVXDLOR0LSanrr2+rjuzP2eoy3p1uwmGjAuctXHVYWrFf3JMbNZCZCmzyxSYQJdzmJgx02F7amxBovQ/Bk3T22/aMn+X4ENe936di5ybWHHgvOBgPIcbHKz6XOBIT4Z0QAtmF36W3tnOUeKXDTNuceRPFWtPELS8V0gqic8IL8qmjnzTnTH0CKuqpb2V+cE4I/xgbSVRlESdbWZ4KSFDNq7AblSu6zyfK2mcPP6OfkIGHj85h7fqWsGzXd0uXtzyn1a5nNzqberkMkq5CEBcDUP82uDpZdk6zc8eeiIWnIP9MWueLgLfGQVfQjhIF1LUws+aujBYn0CDPCvO8sP24PxePLJmAl53fqOgiBDRUty75S/hhURUuQGcGKoXzNV365tgZ0LRdrDrUMRWt/GJqIX6+5ZmmZX3j0lAdL5coTJm8zl/D6Aw1zmhh8dLbuLorS77jwz/CL3ugDzPF0dfnGCms=
+  app: goingcalendar
+  on:
+    repo: tubbo/going
