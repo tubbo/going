@@ -6,6 +6,7 @@ require 'mocha/minitest'
 VCR.configure do |config|
   config.cassette_library_dir = 'test/cassettes'
   config.hook_into :webmock
+  config.ignore_hosts '127.0.0.1', 'localhost'
 end
 
 class ActiveSupport::TestCase
@@ -15,18 +16,18 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
 end
 
-class ActionDispatch::IntegrationTest
-  setup :setup_omniauth
+module FacebookAuth
+  extend ActiveSupport::Concern
 
-  protected
+  included do
+    setup :setup_omniauth
+  end
 
   def log_in_with_facebook
     setup_auth_hash
     get create_user_path(provider: 'facebook')
     assert_response :redirect
   end
-
-  private
 
   def setup_omniauth
     OmniAuth.config.test_mode = true
@@ -48,4 +49,8 @@ class ActionDispatch::IntegrationTest
       }
     )
   end
+end
+
+class ActionDispatch::IntegrationTest
+  include FacebookAuth
 end

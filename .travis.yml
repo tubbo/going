@@ -1,6 +1,7 @@
 language: ruby
 rvm: 2.5.0
-script: ./bin/rails db:setup test
+before_script: ./bin/rails db:setup
+script: ./bin/rails test test/**/*_test.rb
 deploy:
   provider: heroku
   api_key:
