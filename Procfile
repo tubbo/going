@@ -1,2 +1,2 @@
 web: ./bin/rails server -p $PORT -e production
-worker: ./bin/sidekiq --config config/sidekiq.yml
+worker: ./bin/bundle exec sidekiq --config config/sidekiq.yml
