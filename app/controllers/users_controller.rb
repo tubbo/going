@@ -4,6 +4,8 @@ class UsersController < ApplicationController
       redirect_to calendar_path
       return
     end
+
+    expires_in 15.minutes, public: true
   end
 
   def create
