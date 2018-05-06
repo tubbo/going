@@ -56,17 +56,19 @@ Rails.application.configure do
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
 
+  REDIS_URL = ENV.fetch('REDIS_URL', 'redis://localhost:6379')
+
   # Use a different cache store in production.
   config.cache_store = :redis_cache_store, {
-    url: credentials.redis_url,
+    url: REDIS_URL,
     compress: true,
     namespace: 'rails_cache'
   }
 
   # Use Rack::Cache as an HTTP cache.
   config.action_dispatch.rack_cache = {
-    metastore: "#{credentials.redis_url}/0/rack_cache_metastore",
-    entitystore: "#{credentials.redis_url}/0/rack_cache_entitystore"
+    metastore: "#{REDIS_URL}/0/rack_cache_metastore",
+    entitystore: "#{REDIS_URL}/0/rack_cache_entitystore"
   }
 
   # Use a real queuing backend for Active Job (and separate queues per environment)

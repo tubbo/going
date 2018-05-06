@@ -40,6 +40,22 @@ You can contribute to Going by [submitting a pull request][prs] through
 GitHub. We run tests on all pull requests when they're submitted, and
 will not merge PRs that fail the build.
 
+### Installation
+
+To install this application, make sure you have **Ruby 2.5** and
+**Bundler** installed, then run the following script from the root of
+this repo:
+
+    ./bin/setup
+
+Once that's complete, run the following command to start the server if
+you're not using `puma-dev` (if you are, you can browse to
+http://going.test to start the server instead):
+
+    ./bin/rails server
+
+Then go to <http://localhost:3000>.
+
 [ci]: https://travis-ci.org/tubbo/going
 [issues]: https://github.com/tubbo/going/issues
 [license]: https://github.com/tubbo/going/blob/master/LICENSE.txt
